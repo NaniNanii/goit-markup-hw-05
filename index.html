@@ -42,8 +42,15 @@
     <main>
       <section class="solutions solutions-greybox">
         <h1 class="soluciones position-soluciones">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-        <button class="buttonh" type="button">Solicite nuestro servicio</button>
+        <button class="data-modal-open" data-modal-open type="button">Solicite nuestro servicio</button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <form> <!-- Forms --> </form>
+      <button class="data-modal-close" data-modal-close>X</button>
+          </div>
+        </div>
       </section>  
+
       <!-- Valores -->
       <section>
         <ul class="container four-points">
@@ -345,5 +352,6 @@
         </ul>
       </address>
     </footer>
+    <script src="./modal.js"></script>
   </body>
 </html>
