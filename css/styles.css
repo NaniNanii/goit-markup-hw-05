@@ -585,7 +585,6 @@ color: #FFFFFF;
   border-radius: 4px;
 }
 
-
 .data-modal-open {
   background: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -631,6 +630,6 @@ color: #FFFFFF;
 
 .solutions [data-modal] {
   position: absolute;
-  top: calc(50% - 290.5px);
+  top: calc(39% - 290.5px);
   left: calc(50% - 264px);
 }
