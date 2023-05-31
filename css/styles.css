@@ -61,6 +61,7 @@ a {
   line-height: 1.14;
   margin-right: 50px;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active {
@@ -83,6 +84,7 @@ a {
   border: none;
   border-radius: 4px;
   padding: 6px 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover, .button:focus {
@@ -414,6 +416,7 @@ margin: 0;
   border-radius: 50%;
   height: 44px;
   width: 44px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media:hover {
@@ -450,6 +453,7 @@ margin: 0;
   border: 2px solid #AFB1B8;
   border-radius: 1px;
   color: #AFB1B8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clientes-cuadro:hover {
@@ -507,6 +511,7 @@ color: #FFFFFF;
   border-radius: 50%;
   background-color: white;
   opacity: 10%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-footer:hover {
@@ -556,10 +561,7 @@ color: #FFFFFF;
   overflow: hidden;
 }
 
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -572,10 +574,15 @@ color: #FFFFFF;
   z-index: 999;
 }
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .modal {
   width: 528px;
   height: 581px;
-  position: absolute;
   background-color: #ffffff;
   border-radius: 4px;
   display: flex;
@@ -606,10 +613,11 @@ color: #FFFFFF;
 
 .data-modal-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 210px;
+  right: 700px;
   width: 30px;
   height: 30px;
+  padding: 10px;
   font-size: 11px;
   font-weight: bold;
   color: #000000;
@@ -626,10 +634,6 @@ color: #FFFFFF;
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
-}
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.solutions [data-modal] {
-  position: absolute;
-  top: calc(39% - 290.5px);
-  left: calc(50% - 264px);
 }
